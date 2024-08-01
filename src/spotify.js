@@ -6,7 +6,7 @@ const redirectUri = "http://localhost:3000";
 const scopes = ["user-library-read", "playlist-read-private"];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${
-  (redirectUri, "https://vercel.com/rtanabis-projects/music-web")
+  (redirectUri, "https://music-web-ashy.vercel.app/")
 }&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
 
 const apiClient = axios.create({
