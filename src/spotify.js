@@ -5,9 +5,9 @@ const clientId = "baad11e81bb945529f1f2e3c24d5b52e";
 const redirectUri = "http://localhost:3000";
 const scopes = ["user-library-read", "playlist-read-private"];
 
-export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
-  "%20"
-)}&response_type=token&show_dialog=true`;
+export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${
+  (redirectUri, "https://vercel.com/rtanabis-projects/music-web")
+}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
 
 const apiClient = axios.create({
   baseURL: "https://api.spotify.com/v1/",
